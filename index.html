@@ -13,7 +13,31 @@
         </header>
         <main>
             <h1 id="page-title">Coding Quiz Challenge</h1>
+            <div id="quiz">
+                <p id="question" class="question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <div id="answerchoices" class="hidden answerwrap">
+                    <button type="submit" class="choicebtn btn" id="choicebtn1">Option 1</button>
+                    <button type="submit" class="choicebtn btn" id="choicebtn2">Option 2</button>
+                    <button type="submit" class="choicebtn btn" id="choicebtn3">Option 3</button>
+                    <button type="submit" class="choicebtn btn" id="choicebtn4">Option 4</button>
+                </div>
+            </div>
+            <button type="submit" id="startbtn" class="startbtn btn">Start Quiz</button>
         </main>
+        <form id="highscoreentry" class="highscoreform hidden">
+            <label for="initialentry" class="initiallabel">Enter initials:</label>
+            <input name="initialentry" type="text" id="initialentry" class="initialentry" maxlength="4" required />
+            <button type="submit" id="highscoresubmit" class="highscoresubmit btn">Submit</button>
+        </form>
+        <ul id="highscoreslist" class="highscoreslist hidden">
+        </ul>
+        <form id="quizendform">
+            <button id="restartbtn" class="hidden btn">Go back</button>
+            <button id="clearscoresbtn" class="hidden btn">Clear high scores</button>
+        </form>
+        <section class="feedbackwrapper">
+            <p id="feedback" class="feedback"></p>
+        </section>
         <script src="./assets/js/quiz.js"></script>
     </body>
 </html>
