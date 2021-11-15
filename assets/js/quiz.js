@@ -25,6 +25,15 @@ const feedbackEl = document.querySelector("#feedback");
 // set up quiz array
 const quizArr = [
     {question: "What are the two types of data in JavaScript?", choice1: "Good and bad", choice2: "Functional and nonfunctional", choice3: "Primitives and objects", choice4: "Standard and variable", answer: "3"},
+    {question: "What are examples of primitive data types?", choice1: "Grunts, whistles and calls", choice2: "Strings, numbers and Boolean", choice3: "Trains, planes and automobiles", choice4: "Logical, contextual and clustered", answer: "2"},
+    {question: "Arrays that start their index at zero are called ______ arrays.", choice1: "zero-sum", choice2: "base-zero", choice3: "zero-initialized", choice4: "zero-indexed", answer: "4"},
+    {question: 'The "for" loop is a special type of statement called a ______.', choice1: "control flow", choice2: "selector", choice3: "variable", choice4: "initial expression", answer: "1"},
+    {question: "Variables that are declared outside of any functions are considered _______, meaning that any function can access them.", choice1: "universal", choice2: "primary", choice3: "global", choice4: "alpha", answer: "3"},
+    {question: "Variables with ______ scope only exist within the scope of the function.", choice1: "domestic", choice2: "local", choice3: "home", choice4: "limited", answer: "2"},
+    {question: "When a function belongs to an object, it's referred to as a ______.", choice1: "child", choice2: "descendant", choice3: "package", choice4: "method", answer: "4"},
+    {question: "A ____ function calls itself.", choice1: "recursive", choice2: "repetitive", choice3: "redundant", choice4: "retrograde", answer: "1"},
+    {question: "_____ values are values that evaluate to false in a conditional statement", choice1: "wrongy", choice2: "falsy", choice3: "incorrecty", choice4: "untruey", answer: "2"},
+    {question: "What method changes characters in a string to lowercase?", choice1: "makeLowerCase", choice2: "setLowerCase", choice3: "toLowerCase", choice4: "returnLowerCase", answer: "3"},
     
 ];
 
@@ -35,7 +44,7 @@ quizArr.sort(function() {
 
 
 // set up other values
-var timeRemaining = 150;
+var timeRemaining = 60;
 var score = 0;
 var lastQuestionIndex = quizArr.length -1;
 var currentQuestionIndex = 0;
